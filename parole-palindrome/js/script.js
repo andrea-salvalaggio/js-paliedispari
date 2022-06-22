@@ -4,17 +4,19 @@
 
 // Creo una costante per chiedere all'utente di inserire una parola
 const userWord = prompt('Inserisci una parola');
+let firstString = 'ciao';
 
+function reverse(firstString) {
 
-// Chiamo la funzione per capire se la parola inserita è palindroma
-function isPalindrome(word) {
+    let result = '';
 
-    // Creo un ciclo per scorrere la parola inserita
-    for (let i = 0; i < word.length; i++) {
-
+    for (let i = firstString.length - 1; i >= 0; i--) {
+        result += firstString[i];
     }
+
+    return result;
 
 }
 
-// Stampo in console la risposta della funzione
-isPalindrome(userWord);
+console.log(reverse(userWord));
+console.log(reverse(firstString));
