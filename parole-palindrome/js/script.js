@@ -8,6 +8,9 @@ const userWord = prompt('Inserisci una parola');
 // Creo una funzione per la parola contraria
 function reverse(firstString) {
 
+    // Faccio in modo che la parola inserita dall'utente venga convertita in minuscolo
+    firstString = firstString.toLowerCase();
+
     // Creo una variabile per la parola contraria
     let result = '';
 
